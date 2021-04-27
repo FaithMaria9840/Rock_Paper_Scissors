@@ -16,12 +16,12 @@ function computerPlay() {
     playerSelection  === 'Paper' && computerSelection === 'Rock' ||
     playerSelection  === 'Rock' && computerSelection === 'Scissors') {
             return 'you win';
-       }else if (playerSelection  === 'Paper' && computerSelection === 'Scissors' ||
-       playerSelection  === 'Rock' && computerSelection === 'Paper' ||
-       playerSelection === 'Scissors' && computerSelection === 'Rock') {
-           return 'you lose';
-       }else {
+       }else if (playerSelection  === 'Paper' && computerSelection === 'Paper' ||
+       playerSelection  === 'Rock' && computerSelection === 'Rock' ||
+       playerSelection === 'Scissors' && computerSelection === 'Scissors') {
            return 'a tie';
+       }else {
+           return 'you lose';
        }
     }
     function game() {
